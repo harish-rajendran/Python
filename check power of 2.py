@@ -4,17 +4,21 @@
 #
 # Author:      Admin
 #
-# Created:     06-08-2016
+# Created:     08-08-2016
 # Copyright:   (c) Admin 2016
 # Licence:     <your licence>
 #-------------------------------------------------------------------------------
 
 def main():
-    a = input("from:")
-    b = input("Upto:")
-    for x in range(a,b,3):
-        if( x%2 == 0):
-            print(x)
+    n=input()
+    for i in range(2,n):
+        if(i<n):
+            j=2**i
+            if(j==n):
+                print("yes")
+                break
+    else:
+        print("no")
 
 
 if __name__ == '__main__':

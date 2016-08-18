@@ -1,20 +1,22 @@
 #-------------------------------------------------------------------------------
-# Name:        module1
+# Name:        module2
 # Purpose:
 #
 # Author:      Admin
 #
-# Created:     06-08-2016
+# Created:     17-08-2016
 # Copyright:   (c) Admin 2016
 # Licence:     <your licence>
 #-------------------------------------------------------------------------------
 
 def main():
-    a = input("from:")
-    b = input("Upto:")
-    for x in range(a,b,3):
-        if( x%2 == 0):
-            print(x)
+    s="Do I need to raise a seed round"
+    #print set(s)
+    dict = {}
+    for i in set(s):
+        b = s.count(i, 0, len(s))
+        dict[i] = b
+    print dict
 
 
 if __name__ == '__main__':

@@ -4,18 +4,17 @@
 #
 # Author:      Admin
 #
-# Created:     06-08-2016
+# Created:     08-08-2016
 # Copyright:   (c) Admin 2016
 # Licence:     <your licence>
 #-------------------------------------------------------------------------------
 
 def main():
-    a = input("from:")
-    b = input("Upto:")
-    for x in range(a,b,3):
-        if( x%2 == 0):
-            print(x)
-
+    a=raw_input("PRESS Q or q to quit a program : ")
+    if(a=="q" or a=="Q"):
+        quit
+    else:
+        print "Please press Q or q"
 
 if __name__ == '__main__':
     main()

@@ -4,17 +4,22 @@
 #
 # Author:      Admin
 #
-# Created:     06-08-2016
+# Created:     07-08-2016
 # Copyright:   (c) Admin 2016
 # Licence:     <your licence>
 #-------------------------------------------------------------------------------
 
 def main():
-    a = input("from:")
-    b = input("Upto:")
-    for x in range(a,b,3):
-        if( x%2 == 0):
-            print(x)
+    num = input("Enter a number : ")
+    num1= input("Enter a number : ")
+    for x in range (num,num1):
+        count=0
+        for i in range(2,x):
+                if(x%i ==  0):
+                    count=1
+                    break
+        if(count==0):
+            print x
 
 
 if __name__ == '__main__':

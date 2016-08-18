@@ -10,12 +10,11 @@
 #-------------------------------------------------------------------------------
 
 def main():
-    a = input("from:")
-    b = input("Upto:")
-    for x in range(a,b,3):
-        if( x%2 == 0):
-            print(x)
-
-
+    n=input("enter the number")
+    count=0
+    while(n>0):
+        n=n/10
+        count+=1
+    print "number of integer is",count
 if __name__ == '__main__':
     main()

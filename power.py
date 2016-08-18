@@ -10,11 +10,10 @@
 #-------------------------------------------------------------------------------
 
 def main():
-    a = input("from:")
-    b = input("Upto:")
-    for x in range(a,b,3):
-        if( x%2 == 0):
-            print(x)
+    num=input("enter the number")
+    power=input("enter the power")
+    n=num**power
+    print n
 
 
 if __name__ == '__main__':
